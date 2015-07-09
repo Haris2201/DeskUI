@@ -1,0 +1,66 @@
+body > section#menus {
+	position:			absolute;
+
+	top:				0;
+	left:				0;
+	right:				0;
+	bottom:				0;
+	width:				100%;
+	height:				100%;
+
+	pointer-events:		none;
+	z-index:			10000000; /* this time literally 10 million */
+}
+
+body > section#menus > div.menu {
+	position:			absolute;
+
+	top:				0;
+	left:				0;
+
+	pointer-events:		initial;
+}
+
+body > section#menus > div.menu.context {
+	background:			#eee;
+	display:			none;
+
+	width:				200px;
+	height:				auto;
+	padding:			1px 0;
+
+	border-radius:		1px;
+	box-shadow:			0 0 10px 5px rgba(0,0,0,.25);
+}
+
+body > section#menus > div.menu.context > button.item {
+	color:				#000;
+	display:			block;
+
+	width:				100%;
+	padding:			7px 10px;
+
+	border:				none;
+	cursor:				pointer;
+	font-size:			13px;
+	text-align:			left;
+	-m-transition:		none !important;
+	-moz-transition:	none !important;
+	-o-transition:		none !important;
+	-webkit-transition:	none !important;
+	transition:			none !important;
+}
+
+body > section#menus > div.menu.context > button.item:hover {
+	background:			#28a;
+	color:				#fff;
+}
+
+body > section#menus > div.menu.context > span.separator {
+	display:			block;
+
+	margin:				3px 0;
+
+	border-top:			1px solid rgba(0,0,0,.1);
+	border-bottom:		1px solid rgba(255,255,255,.1);
+}

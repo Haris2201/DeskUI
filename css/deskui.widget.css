@@ -1,0 +1,279 @@
+body > section#widgets {
+	position:			absolute;
+
+	top:				0;
+	left:				0;
+	right:				0;
+	bottom:				0;
+	width:				100%;
+	height:				100%;
+
+	pointer-events:		none;
+	text-align:			center;
+	z-index:			10000001; /* this is getting out of hand */
+}
+
+body > section#widgets > div.notice {
+	background:			rgba(0,0,0,.75);
+	color:				#fff;
+	display:			inline-block;
+	position:			relative;
+
+	width:				auto;
+	margin:				auto;
+	margin-top:			20px;
+	padding:			10px 20px;
+
+	border:				1px solid rgba(0,0,0,.1);
+	border-radius:		5px;
+	font-size:			14px;
+	opacity:			0;
+	pointer-events:		none;
+	text-align:			center;
+	-m-transition:		none !important;
+	-moz-transition:	none !important;
+	-o-transition:		none !important;
+	-webkit-transition:	none !important;
+	transition:			none !important;
+}
+
+body > section#widgets > div.notice.success {
+	background:			rgba(50,200,50,.75);
+
+	padding-left:		45px;
+
+	border:				1px solid rgba(50,200,50,.1);
+}
+
+body > section#widgets > div.notice.success:before {
+	background:			url('../images/success.png') no-repeat center center;
+	content:			'';
+	display:			inline-block;
+	position:			absolute;
+
+	top:				6px;
+	left:				12px;
+	width:				24px;
+	height:				24px;
+	margin-right:		10px;
+
+	font-weight:		bold;
+}
+
+body > section#widgets > div.notice.info {
+	background:			rgba(34,136,170,.75);
+
+	padding-left:		45px;
+
+	border:				1px solid rgba(34,136,170,.1);
+}
+
+body > section#widgets > div.notice.info:before {
+	background:			url('../images/info.png') no-repeat center center;
+	content:			'';
+	display:			inline-block;
+	position:			absolute;
+
+	top:				6px;
+	left:				12px;
+	width:				24px;
+	height:				24px;
+	margin-right:		10px;
+
+	font-weight:		bold;
+}
+
+body > section#widgets > div.notice.error {
+	background:			rgba(170,34,34,.75);
+
+	padding-left:		45px;
+
+	border:				1px solid rgba(170,34,34,.1);
+}
+
+body > section#widgets > div.notice.error:before {
+	background:			url('../images/error.png') no-repeat center center;
+	content:			'';
+	display:			inline-block;
+	position:			absolute;
+
+	top:				6px;
+	left:				12px;
+	width:				24px;
+	height:				24px;
+	margin-right:		10px;
+
+	font-weight:		bold;
+}
+
+body > section#widgets > div.notice.warning {
+	background:			rgba(255,136,0,.75);
+
+	padding-left:		45px;
+
+	border:				1px solid rgba(255,136,0,.1);
+}
+
+body > section#widgets > div.notice.warning:before {
+	background:			url('../images/warning.png') no-repeat center center;
+	content:			'';
+	display:			inline-block;
+	position:			absolute;
+
+	top:				6px;
+	left:				12px;
+	width:				24px;
+	height:				24px;
+	margin-right:		10px;
+
+	font-weight:		bold;
+}
+
+body > section#widgets > div.dialog {
+	background:			rgba(0,0,0,.75);
+	color:				#fff;
+	display:			none;
+	position:			absolute;
+
+	width:				auto;
+	height:				auto;
+	min-width:			300px;
+
+	border:				1px solid rgba(0,0,0,.75);
+	cursor:				default;
+	opacity:			0;
+	pointer-events:		all;
+}
+
+body > section#widgets > div.dialog.success {
+	background:			rgba(50,200,50,.75);
+
+	border:				1px solid rgba(50,200,50,.1);
+}
+
+body > section#widgets > div.dialog.success:before {
+	background:			url('../images/success.png') no-repeat center center;
+	content:			'';
+	display:			inline-block;
+	position:			absolute;
+
+	top:				50%;
+	left:				10px;
+	width:				24px;
+	height:				24px;
+	margin-top:			-32px;
+
+	font-weight:		bold;
+}
+
+body > section#widgets > div.dialog.info {
+	background:			rgba(34,136,170,.75);
+
+	border:				1px solid rgba(34,136,170,.1);
+}
+
+body > section#widgets > div.dialog.info:before {
+	background:			url('../images/info.png') no-repeat center center;
+	content:			'';
+	display:			inline-block;
+	position:			absolute;
+
+	top:				50%;
+	left:				10px;
+	width:				24px;
+	height:				24px;
+	margin-top:			-32px;
+
+	font-weight:		bold;
+}
+
+body > section#widgets > div.dialog.error {
+	background:			rgba(170,34,34,.75);
+
+	border:				1px solid rgba(170,34,34,.1);
+}
+
+body > section#widgets > div.dialog.error:before {
+	background:			url('../images/error.png') no-repeat center center;
+	content:			'';
+	display:			inline-block;
+	position:			absolute;
+
+	top:				50%;
+	left:				10px;
+	width:				24px;
+	height:				24px;
+	margin-top:			-32px;
+
+	font-weight:		bold;
+}
+
+body > section#widgets > div.dialog.warning {
+	background:			rgba(255,136,0,.75);
+
+	border:				1px solid rgba(255,136,0,.1);
+}
+
+body > section#widgets > div.dialog.warning:before {
+	background:			url('../images/warning.png') no-repeat center center;
+	content:			'';
+	display:			inline-block;
+	position:			absolute;
+
+	top:				50%;
+	left:				10px;
+	width:				24px;
+	height:				24px;
+	margin-top:			-32px;
+
+	font-weight:		bold;
+}
+
+body > section#widgets > div.dialog > div.content {
+	padding:			20px 35px;
+
+	font-size:			14px;
+	text-align:			center;
+}
+
+body > section#widgets > div.dialog > div.buttons {
+	position:			relative;
+
+	width:				100%;
+
+	border-top:			1px solid rgba(255,255,255,.25);
+}
+
+body > section#widgets > div.dialog > div.buttons > button {
+	color:				#fff;
+
+	width:				auto;
+	height:				100%;
+	padding:			10px 0;
+
+	cursor:				pointer;
+	font-size:			14px;
+}
+
+body > section#widgets > div.dialog > div.buttons > button:hover {
+	background:			rgba(0,0,0,.5);
+}
+
+body > section#widgets > div.dialog > div.buttons > button:nth-last-child(1) {
+	width:				100%;
+}
+
+body > section#widgets > div.dialog > div.buttons > button:nth-last-child(2),
+body > section#widgets > div.dialog > div.buttons > button:nth-last-child(2) ~ button {
+	width:				50%;
+}
+
+body > section#widgets > div.dialog > div.buttons > button:nth-last-child(3),
+body > section#widgets > div.dialog > div.buttons > button:nth-last-child(3) ~ button {
+	width:				33.3%;
+}
+
+body > section#widgets > div.dialog > div.buttons > button:nth-last-child(4),
+body > section#widgets > div.dialog > div.buttons > button:nth-last-child(4) ~ button {
+	width:				25%;
+}

@@ -1,0 +1,283 @@
+body > section#windows > div.window > section.content > section.filebrowser {
+	background:			#eee;
+	position:			absolute;
+
+	top:				0;
+	left:				0;
+	right:				0;
+	bottom:				0;
+	width:				100%;
+	height:				100%;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation {
+	background:			#ccc;
+	position:			absolute;
+
+	top:				0;
+	left:				0;
+	right:				0;
+	width:				100%;
+	height:				36px;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > button {
+	position:			absolute;
+
+	top:				4px;
+	width:				28px;
+	height:				28px;
+
+	border:				1px solid rgba(0,0,0,.1);
+	cursor:				pointer;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > button:disabled {
+	background-color:	#bbb !important;
+
+	opacity:			.5;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > button.back {
+	background:			#bbb url('images/prev.png') no-repeat center center;
+
+	left:				15px;
+
+	border-right:		1px solid rgba(0,0,0,.05);
+	border-radius:		5px 0 0 5px;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > button.forward {
+	background:			#bbb url('images/next.png') no-repeat center center;
+
+	left:				43px;
+
+	border-left:		1px solid rgba(0,0,0,.05);
+	border-radius:		0 5px 5px 0;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > button.refresh {
+	background:			#bbb url('images/refresh.png') no-repeat center center;
+
+	left:				80px;
+
+	border-radius:		5px;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > button.up {
+	background:			#bbb url('images/up.png') no-repeat center center;
+
+	left:				117px;
+
+	border-radius:		5px;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > button.list {
+	background:			#bbb url('images/list.png') no-repeat center center;
+
+	left:				154px;
+
+	border-radius:		5px;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > button.grid {
+	background:			#bbb url('images/grid.png') no-repeat center center;
+	display:			none;
+
+	left:				154px;
+
+	border-radius:		5px;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > button:hover {
+	background-color:	#aaa;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > div.filebrowser-location {
+	display:			inline-block;
+	position:			absolute;
+
+	top:				4px;
+	left:				191px;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > div.filebrowser-location > button {
+	background:			#bbb;
+	color:				#444;
+
+	padding:			5px 10px;
+
+	cursor:				pointer;
+	border:				1px solid rgba(0,0,0,.1);
+	border-left:		1px solid rgba(0,0,0,.05);
+	border-right:		1px solid rgba(0,0,0,.05);
+	font-size:			14px;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > div.filebrowser-location > button:hover {
+	background-color:	#aaa;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > div.filebrowser-location > button:first-child {
+	border-radius:		5px 0 0 5px;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > div.filebrowser-location > button:last-child {
+	border-radius:		0 5px 5px 0;
+}
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > div.filebrowser-location > button:only-child {
+	border-radius:		5px;
+}
+
+/*
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-navigation > div.filebrowser-location > button:after {
+	content:			'/';
+
+	margin:				0 5px;
+
+	font-size:			14px;
+}
+*/
+
+/*
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-tree {
+	background:			#ddd;
+	position:			absolute;
+
+	top:				36px;
+	left:				0;
+	bottom:				0;
+	width:				200px;
+
+	overflow:			auto;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-tree > ul {
+	margin:				50px 0;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-tree  ul {
+	margin:				5px;
+	padding:			5px;
+
+	border-left:		1px solid rgba(0,0,0,.25);
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-tree  ul > li {
+	position:			relative;
+
+	left:				20px;
+	margin:				5px 0;
+	padding:			0;
+
+	list-style:			none;
+	font-size:			14px;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-tree  ul > li > img {
+	position:			absolute;
+
+	left:				-20px;
+	width:				16px;
+	height:				16px;
+}
+*/
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-content {
+	background:			#eee;
+	position:			absolute;
+
+	top:				36px;
+	left:				0;
+	right:				0;
+	bottom:				0;
+
+	overflow:			auto;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-content > button.file {
+	-m-transition:		none !important;
+	-moz-transition:	none !important;
+	-o-transition:		none !important;
+	-webkit-transition:	none !important;
+	transition:			none !important;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-content.grid > button.file {
+	position:			relative;
+
+	width:				150px;
+	min-height:			100px;
+	height:				auto;
+	margin:				10px;
+
+	cursor:				pointer;
+	text-align:			center;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-content.grid > button.file > img {
+	display:			block;
+
+	width:				48px;
+	height:				48px;
+	margin:				auto;
+
+	pointer-events:		none;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-content.grid > button.file > h3 {
+	background:			rgba(0,0,0,.5);
+	color:				#fff;
+
+	padding:			3px 5px;
+	max-width:			140px;
+
+	border-radius:		5px;
+	font-size:			14px;
+	pointer-events:		none;
+	word-wrap:			break-word;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-content.grid > button.file:hover > h3 {
+	background:			rgba(0,0,0,.75);
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-content.list > button.file {
+	background:			#eee;
+	display:			block;
+	position:			relative;
+
+	width:				100%;
+	padding:			5px 10px;
+
+	cursor:				pointer;
+	text-align:			left;
+	-m-transition:		none !important;
+	-moz-transition:	none !important;
+	-o-transition:		none !important;
+	-webkit-transition:	none !important;
+	transition:			none !important;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-content.list > button.file:nth-child(odd) {
+	background:			#fff;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-content.list > button.file:hover {
+	background:			#bbb;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-content.list > button.file > img {
+	width:				32px;
+	height:				32px;
+}
+
+body > section#windows > div.window > section.content > section.filebrowser > section.filebrowser-content.list > button.file > h3 {
+	color:				#111;
+	position:			absolute;
+
+	top:				12px;
+	left:				50px;
+
+	font-size:			18px;
+}
