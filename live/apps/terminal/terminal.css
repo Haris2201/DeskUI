@@ -1,0 +1,68 @@
+body > section#windows > div.window > section.content > code.terminal {
+	background:			rgba(0,0,0,.75);
+	color:				#0f0;
+	display:			block;
+	position:			absolute;
+
+	top:				0;
+	left:				0;
+	right:				0;
+	bottom:				0;
+	width:				100%;	
+	height:				100%;
+
+	font-size:			0;
+	overflow:			auto;
+}
+
+body > section#windows > div.window > section.content > code.terminal > span {
+	font-size:			12px;
+
+	-khtml-user-select:	text;
+	-moz-user-select:	text;
+	-ms-user-select:	text;
+	-webkit-user-select:text;
+	user-select:		text;
+}
+
+body > section#windows > div.window > section.content > code.terminal > span.terminal-output {
+	white-space:		pre;
+}
+
+body > section#windows > div.window > section.content > code.terminal > span.terminal-cursor {
+	background:			#0f0;
+
+	animation:			terminal-cursor-animation 1s infinite;
+}
+
+@keyframes terminal-cursor-animation {
+	0%, 50% {
+		background:		#0f0;
+	}
+	51%,100% {
+		background:		transparent;
+	}
+}
+
+body > section#windows > div.window > section.content > code.terminal > textarea.terminal-event {
+	background:			transparent;
+	color:				transparent;
+	display:			block;
+	position:			absolute;
+
+	top:				0;
+	left:				0;
+	right:				0;
+	bottom:				0;
+	width:				100%;	
+	height:				100%;
+	margin:				0;
+	padding:			0;
+
+	border:				none;
+	font-size:			1px;
+	resize:				none;
+	opacity:			0;
+	overflow:			hidden;
+	pointer-events:		none !important;
+}

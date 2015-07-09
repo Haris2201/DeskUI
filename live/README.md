@@ -1,0 +1,1 @@
+See [DeskUI's master branch](https://github.com/Haris2201/DeskUI) for a complete README and up-to-date LICENSE.

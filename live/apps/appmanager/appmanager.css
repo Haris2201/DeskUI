@@ -1,0 +1,174 @@
+body > section#windows > div.window > section.content > section.appmanager {
+	position:			absolute;
+
+	width:				100%;
+	height:				100%;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-bar {
+	background:			#ccc;
+	position:			absolute;
+
+	top:				0;
+	left:				0;
+	right:				0;
+	width:				100%;
+	height:				36px;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-bar > button {
+	position:			absolute;
+
+	top:				4px;
+	width:				28px;
+	height:				28px;
+
+	border:				1px solid rgba(0,0,0,.1);
+	border-radius:		5px;
+	cursor:				pointer;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-bar > button:disabled {
+	background-color:	#bbb !important;
+
+	opacity:			.5;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-bar > button.local {
+	background:			#bbb url('./images/local.png') no-repeat center center;
+
+	left:				15px;
+
+	border-radius:		5px 0 0 5px;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-bar > button.store {
+	background:			#bbb url('./images/store.png') no-repeat center center;
+
+	left:				43px;
+
+	border-radius:		0 5px 5px 0;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-bar > button.search-update {
+	background:			#bbb url('./images/search_update.png') no-repeat center center;
+
+	left:				80px;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-bar > button.search {
+	background:			#bbb url('./images/search.png') no-repeat center center;
+
+	left:				117px;
+
+	border-radius:		5px 0 0 5px;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-bar > input.search-field {
+	background:			#eee;
+	color:				#444;
+	position:			absolute;
+
+	left:				145px;
+	top:				4px;
+	width:				calc(100% - 160px);
+	height:				28px;
+	padding:			0 10px;
+
+	border:				1px solid rgba(0,0,0,.25);
+	border-radius:		0 5px 5px 0;
+	font-size:			14px;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-apps {
+	background:			#eee;
+	position:			absolute;
+
+	top:				36px;
+	left:				0;
+	right:				0;
+	bottom:				0;
+	width:				100%;
+	height:				auto;
+
+	overflow:			auto;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-apps > div.appmanager-app {
+	background:			#ddd;
+	position:			relative;
+
+	height:				48px;
+	padding:			5px 0;
+
+	border-bottom:		1px solid rgba(0,0,0,.1);
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-apps > div.appmanager-app > div.progress {
+	background:			rgba(50,200,50,.75);
+	position:			absolute;
+
+	top:				0;
+	left:				0;
+	bottom:				0;
+	width:				0;
+	height:				100%;
+
+	animation:			appmanager-progress-animation 1s infinite alternate;
+	opacity:			.75;
+}
+
+@keyframes appmanager-progress-animation {
+	0% {
+		opacity:		.75;
+	}
+	100% {
+		opacity:		.5;
+	}
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-apps > div.appmanager-app > img {
+	position:			relative;
+
+	width:				48px;
+	height:				48px;
+	margin:				0 10px;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-apps > div.appmanager-app > h3 {
+	color:				#444;
+	position:			relative;
+
+	top:				-17px;
+
+	font-size:			16px;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-apps > div.appmanager-app > aside {
+	float:				right;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-apps > div.appmanager-app > aside > button {
+	position:			relative;
+
+	top:				10px;
+	width:				28px;
+	height:				28px;
+	margin-right:		10px;
+
+	border:				1px solid rgba(0,0,0,.1);
+	border-radius:		5px;
+	cursor:				pointer;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-apps > div.appmanager-app > aside > button.update {
+	background:			#bbb url('./images/update.png') no-repeat center center;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-apps > div.appmanager-app > aside > button.uninstall {
+	background:			#bbb url('./images/uninstall.png') no-repeat center center;
+}
+
+body > section#windows > div.window > section.content > section.appmanager > section.appmanager-apps > div.appmanager-app > aside > button.download {
+	background:			#bbb url('./images/download.png') no-repeat center center;
+}

@@ -1,0 +1,42 @@
+body > section#apps {
+	position:			absolute;
+
+	width:				100%;
+	height:				100%;
+}
+
+body > section#apps > button.app {
+	width:				200px;
+	height:				128px;
+	margin-top:			50px;
+
+	border:				1px solid transparent;
+	border-radius:		10px;
+	cursor:				pointer;
+	overflow:			hidden;
+	text-align:			center;
+}
+
+body > section#apps > button.app > img {
+	background:			center center;
+	display:			block;
+
+	width:				64px;
+	height:				64px;
+	margin:				0 auto 5px;
+}
+
+body > section#apps > button.app > h3 {
+	background:			rgba(0,0,0,.25);
+	color:				#fff;
+
+	padding:			5px 10px;
+
+	border-radius:		5px;
+	font-size:			16px;
+	white-space:		nowrap;
+}
+
+body > section#apps > button.app:hover > h3 {
+	background:			rgba(0,0,0,.75);
+}

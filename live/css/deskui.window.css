@@ -1,0 +1,194 @@
+body > section#windows {
+	position:			absolute;
+
+	width:				100%;
+	height:				100%;
+
+	pointer-events:		none;
+}
+
+body > section#windows > div.window {
+	position:			absolute;
+
+	top:				400px;
+	left:				100px;
+	width:				500px;
+	height:				400px;
+
+	border:				1px solid rgba(0,0,0,.25);
+	border-radius:		2px;
+	box-shadow:			0 0 10px 5px rgba(0,0,0,.25);
+	cursor:				default;
+	overflow:			hidden;
+	pointer-events:		auto;
+	z-index:			1;
+}
+
+body > section#windows > div.window.maximized {
+	top:				0 !important;
+	left:				0 !important;
+	right:				0 !important;
+	bottom:				44px !important;
+	width:				100% !important;
+	height:				100% !important;
+	width:				calc(100% - 2px) !important;
+	height:				calc(100% - 44px) !important;
+}
+
+body > section#windows > div.window.minimized {
+	top:				auto !important;
+	bottom:				0 !important;
+	width:				0 !important;
+	height:				0 !important;
+
+	border:				none !important;
+	box-shadow:			none !important;
+}
+
+body > section#windows > div.window.moving {
+	cursor:				move !important;
+	-m-transition:		none !important;
+	-moz-transition:	none !important;
+	-o-transition:		none !important;
+	-webkit-transition:	none !important;
+	transition:			none !important;
+}
+
+body > section#windows > div.window.moving iframe {
+	pointer-events:		none !important;
+}
+
+body > section#windows > div.window > header {
+	background:			#eaeaea;
+	display:			block;
+	position:			absolute;
+
+	width:				100%;
+	height:				32px;
+
+	border-bottom:		1px solid #bbb;
+	cursor:				inherit;
+}
+
+body > section#windows > div.window > header > img {
+	width:				32px;
+	height:				32px;
+	margin:				0 5px;
+
+	pointer-events:		none !important;
+}
+
+body > section#windows > div.window > header > h3 {
+	color:				#444;
+	position:			relative;
+
+	top:				-11px;
+	margin:				9px 5px;
+
+	cursor:				inherit;
+	font-size:			14px;
+}
+
+body > section#windows > div.window > header > aside {
+	float:				right;
+}
+
+body > section#windows > div.window > header > aside > button {
+	width:				32px;
+	height:				32px;
+
+	cursor:				pointer;
+}
+
+body > section#windows > div.window > header > aside > button:hover {
+	background-color:	#666 !important;
+}
+
+body > section#windows > div.window > header > aside > button.minimize {
+	background:			#aaa url('../images/minimize.png') no-repeat center center;
+}
+
+body > section#windows > div.window > header > aside > button.maximize {
+	background:			#aaa url('../images/maximize.png') no-repeat center center;
+}
+
+body > section#windows > div.window.maximized > header > aside > button.maximize {
+	display:			none;
+}
+
+body > section#windows > div.window > header > aside > button.unmaximize {
+	background:			#aaa url('../images/unmaximize.png') no-repeat center center;
+	display:			none;
+}
+
+body > section#windows > div.window.maximized > header > aside > button.unmaximize {
+	display:			inline-block;
+}
+
+body > section#windows > div.window > header > aside > button.close {
+	background:			#aaa url('../images/close.png') no-repeat center center;
+}
+
+body > section#windows > div.window > header > aside > button.close:hover {
+	background-color:	#a22 !important;
+}
+
+body > section#windows > div.window > section.content {
+	background:			#ccc;
+	position:			absolute;
+
+	top:				33px;
+	left:				0;
+	right:				0;
+	bottom:				0;
+	width:				100%;
+}
+
+/*
+Mindows
+*/
+body > section#mindows {
+	background:			rgba(0,0,0,.25);
+	position:			absolute;
+
+	left:				0;
+	right:				0;
+	bottom:				0;
+	height:				32px;
+	padding:			5px 0;
+
+	border-top:			1px solid rgba(0,0,0,.1);
+	z-index:			9999999; /* I think nearly 10 million should be enough */
+}
+
+body > section#mindows > button.mindow {
+	background:			rgba(0,0,0,.25);
+
+	width:				auto;
+	height:				32px;
+	margin:				0 10px;
+	padding:			0 10px;
+
+	border-radius:		5px;
+	cursor:				pointer;
+}
+
+body > section#mindows > button.mindow:hover {
+	background:			rgba(0,0,0,.5);
+}
+
+body > section#mindows > button.mindow > img {
+	width:				28px;
+	height:				28px;
+	margin:				2px;
+}
+
+body > section#mindows > button.mindow > h3 {
+	color:				#fff;
+	position:			relative;
+
+	top:				-11px;
+	margin-left:		10px;
+
+	font-size:			14px;
+}
