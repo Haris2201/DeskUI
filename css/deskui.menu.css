@@ -56,6 +56,13 @@ body > section#menus > div.menu.context > button.item:hover {
 	color:				#fff;
 }
 
+body > section#menus > div.menu.context > button.item:disabled {
+	background:			#eee;
+	color:				#aaa;
+
+	cursor:				default;
+}
+
 body > section#menus > div.menu.context > span.separator {
 	display:			block;
 
